@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Environment & Secrets — JANGAN DI-COMMIT!
+backend/.env
+backend/service-account.json
+backend/*.json
+
+# Kecuali package.json tetap di-commit
+!backend/package.json
+
+# Logs
+logs/
+*.log
+pids/
+*.pid
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
