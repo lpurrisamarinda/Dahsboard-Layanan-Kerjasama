@@ -99,6 +99,7 @@ const jadwal = {
     const sheetName = process.env.SHEET_JADWAL;
     const res = await sheets.spreadsheets.values.get({
       spreadsheetId: SPREADSHEET_ID,
+console.log('Mencoba akses sheet:', sheetName, 'di spreadsheet:', SPREADSHEET_ID);
       range: `${sheetName}!A2:H`,
     });
     return rowsToObjects(res.data.values, JADWAL_HEADERS);
