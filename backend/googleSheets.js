@@ -99,7 +99,7 @@ const jadwal = {
     const sheetName = process.env.SHEET_JADWAL;
     const res = await sheets.spreadsheets.values.get({
       spreadsheetId: SPREADSHEET_ID,
-      range: `${sheetName}!A2:H`,
+      range: `Jadwal_Siaran!A2:H`,
     });
     return rowsToObjects(res.data.values, JADWAL_HEADERS);
   },
@@ -290,7 +290,7 @@ const rekananNonPNBP = {
     const sheetName = process.env.SHEET_NONPNBP;
     const res = await sheets.spreadsheets.values.get({
       spreadsheetId: SPREADSHEET_ID,
-      range: `${sheetName}!A2:H`,
+      range: `Jadwal_Siaran!A2:H`,
     });
     return rowsToObjects(res.data.values, NONPNBP_HEADERS);
   },
